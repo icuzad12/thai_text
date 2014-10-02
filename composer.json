@@ -1,0 +1,11 @@
+{
+	"name": "icuzad12/thai_text",
+	"autoload": {
+		
+		"classmap": [
+			"src/"
+			
+		]
+		
+	}
+}
