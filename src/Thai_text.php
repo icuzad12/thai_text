@@ -103,7 +103,7 @@ class Thai_text {
 
         return $m;
     }
-    //Thai date from DateObject
+    //Thai date from DateObject (carbon object)
     public static function dateFromDateObject($dateObject)
     {
     	  $m = $dateObject->month;
