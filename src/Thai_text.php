@@ -10,9 +10,9 @@ class Thai_text {
   		$stang = $explode[1];
   
    		if($stang == '00'){
-    		return Most::readThai($baht).'บาทถ้วน';
+    		return Thai_text::readThai($baht).'บาทถ้วน';
    		}else{
-    		return Most::readThai($baht).'บาท'.Most::readThai($stang).'สตางค์';
+    		return Thai_text::readThai($baht).'บาท'.Most::readThai($stang).'สตางค์';
    		}
  	}
  	//คำอ่านภาษาไทย
