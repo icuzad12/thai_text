@@ -1,6 +1,7 @@
 <?php
 
 class Thai_text {
+	//test auto update
 	//คำอ่านภาษาไทยเป็นงเินมี บาท กะ สตางค์
 	public static function readThaiBath($number){
   	
