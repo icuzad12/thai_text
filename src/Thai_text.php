@@ -77,31 +77,13 @@ class Thai_text {
 
  	//convert month number into thai month
     public static function convertMonth($m){
-    	if ($m == 1) {
-        	$m = "มกราคม";
-        }elseif ($m == 2) {
-        	$m = "กุมภาพันธ์";
-        }elseif ($m == 3) {
-		    $m = "มีนาคม";
-        }elseif ($m == 4) {
-        	$m = "เมษายน";
-        }elseif ($m == 5) {
-        	$m = "พฤษภาคม";
-        }elseif ($m == 6) {
-        	$m = "มิถุนายน";
-        }elseif ($m == 7) {
-        	$m = "กรกฎาคม";
-        }elseif ($m == 8 ) {
-        	$m = "สิงหาคม";
-        }elseif ($m == 9) {
-        	$m = "กันยายน";
-        }elseif ($m == 10) {
-        	$m = "ตุลาคม";
-        }elseif ($m == 11) {
-        	$m = "พฤศจิกายน";
-        }else $m = "ธันวาคม";
-
-        return $m;
+    	$cars=array("","มกราคม","กุมภาพันธ์","มีนาคม","เมษายน","พฤษภาคม","มิถุนายน","กรกฎาคม","สิงหาคม","กันยายน","ตุลาคม","พฤศจิกายน","ธันวาคม");
+    	
+    	if($m >= 0 && $m<=11)
+        	return $cars[$m];
+   	 	else {
+   	 		return $cars[12];
+   	 	}
     }
     //Thai date from DateObject (carbon object)
     public static function dateFromDateObject($dateObject)
