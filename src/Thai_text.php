@@ -92,8 +92,8 @@ class Thai_text {
         $y = $dateObject->year;
         $d = $dateObject->day;
 
-        $y = Most::convertYear($y);
-        $m = Most::convertMonth($m);
+        $y = Thai_text::convertYear($y);
+        $m = Thai_text::convertMonth($m);
 
         return $d." ".$m." ".$y;
     }
