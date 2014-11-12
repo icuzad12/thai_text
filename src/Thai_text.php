@@ -12,7 +12,7 @@ class Thai_text {
    		if($stang == '00'){
     		return Thai_text::readThai($baht).'บาทถ้วน';
    		}else{
-    		return Thai_text::readThai($baht).'บาท'.Most::readThai($stang).'สตางค์';
+    		return Thai_text::readThai($baht).'บาท'.Thai_text::readThai($stang).'สตางค์';
    		}
  	}
  	//คำอ่านภาษาไทย
